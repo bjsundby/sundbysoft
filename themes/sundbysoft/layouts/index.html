@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ .Site.Title }}</title>
+        <link rel="stylesheet" href="{{ "/css/jquery.fullPage.css" | absURL }}" type="text/css">
+        <link rel="stylesheet" href="{{ "/css/sundbysoft.css" | absURL }}" type="text/css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    </head>
+
+    <body id="page-top" style="overflow: hidden;">
+        <div id="fullpage">
+            {{ partial "home.html" . }} {{ partial "what.html" . }} {{ partial "projects.html" . }} {{ partial "history.html" . }}
+        </div>
+        <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#fullpage').fullpage( {
+                        anchors:['home', 'what', 'projects'],
+                        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'yellow']
+                    });
+                });
+        </script>
+
+    </body>
+
+</html>

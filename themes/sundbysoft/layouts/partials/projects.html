@@ -1,0 +1,13 @@
+<div id="projects-box" class="section">
+
+    {{ range .Site.Data.projects }}
+    <div class="content" id="{{ .projectId }}">
+        <div class="slide" data-anchor="{{ .projectId }}">
+            <div class="project-title">
+                {{ .title}}
+            </div>
+        </div>
+    </div>
+    {{ end }}
+
+</div>

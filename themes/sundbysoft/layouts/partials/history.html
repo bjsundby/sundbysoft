@@ -1,0 +1,13 @@
+<div id="history-box" class="section">
+
+   {{ range .Site.Data.history }}
+    <div class="content" id="{{ .historyId }}">
+        <div class="slide" data-anchor="{{ .historyId }}">
+            <div class="history-title">
+                {{ .title}}
+            </div>
+        </div>
+    </div>
+    {{ end }}
+
+</div>
