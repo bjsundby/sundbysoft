@@ -1,7 +1,104 @@
+body,
+div,
+p,
+table,
+td,
+select,
+input,
+textarea {
+    font-family: 'Fira Sans', sans-serif;
+}
+
 body {
     background-color: white;
 }
 
-.section  {
+.fp-controlArrow {
+    top: 90%;
+    border: none;
+    width: 104px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 10px;
+    width: 104px;
+    background: url(/img/navigation/left-arrow.png) no-repeat;
+}
+
+.fp-controlArrow.fp-prev:hover {
+    background: url(/img/navigation/left-arrow-hover.png) no-repeat;
+}
+
+.fp-controlArrow.fp-next {
+    right: -48px;
+    background: url(/img/navigation/right-arrow.png) no-repeat;
+}
+
+.fp-controlArrow.fp-next:hover {
+    background: url(/img/navigation/right-arrow-hover.png) no-repeat;
+}
+
+.nav-mouse {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
+
+.section {
     text-align: center;
+}
+
+div.section::after {
+    transition: all .8s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: " ";
+    z-index: 102;
+}
+
+div.section.active::after {
+    transform: translateX(-100%);
+}
+
+div#home-box.section .home-info {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 10;
+    color: white;
+    background: url(/img/space-03.jpg) center no-repeat;
+}
+
+div#home-box.section .home-text {
+    position: absolute;
+    top: calc(50% - 200px);
+}
+
+div#home-box.section .home-info .title {
+    font-size: 95px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 21px;
+    width: 743px;
+    line-height: 115px;
+    margin-left: 119px;
+    vertical-align: middle;
+    padding-bottom: 63px;
+}
+
+div#home-box.section .home-info .mission-statement {
+    width: 595px;
+    font-size: 34px;
+    text-align: left;
+    line-height: 1.44;
+    color: #ffffff;
+    margin-left: 119px;
 }
