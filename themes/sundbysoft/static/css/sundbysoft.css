@@ -1,11 +1,4 @@
-body,
-div,
-p,
-table,
-td,
-select,
-input,
-textarea {
+body, div, p, table, td, select, input, textarea {
     font-family: 'Fira Sans', sans-serif;
 }
 
