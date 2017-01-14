@@ -2,4 +2,4 @@ baseurl = "http://sundbysoft.com/"
 languageCode = "en-us"
 title = "SundbySoft"
 theme = "sundbysoft"
-relativeURLs = false
+relativeURLs = true
