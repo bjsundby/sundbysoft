@@ -13,6 +13,14 @@ body {
     background-color: white;
 }
 
+#fp-nav {
+  top: 15%;
+}
+
+#fp-nav ul li a span {
+  background: #48b8e7;
+}
+
 .fp-controlArrow {
     top: 90%;
     border: none;
@@ -72,7 +80,6 @@ div#home-box.section .home-info {
     height: 100%;
     left: 0;
     text-align: center;
-    z-index: 10;
     color: white;
     background: url(/img/space-03.jpg) center no-repeat;
 }

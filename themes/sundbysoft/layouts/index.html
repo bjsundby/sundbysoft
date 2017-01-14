@@ -8,20 +8,22 @@
     <title>{{ .Site.Title }}</title>
     <link rel="stylesheet" href="/css/jquery.fullPage.css" type="text/css ">
     <link rel="stylesheet" href="/css/sundbysoft.css" type="text/css ">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 </head>
 
-<body id="page-top" style="overflow: hidden;">
+<body>
     <div id="fullpage">
-        {{ partial "home.html" . }} {{ partial "what.html" . }} {{ partial "projects.html" . }} {{ partial "history.html" . }}
+        {{ partial "home.html" . }} {{ partial "about.html" . }} {{ partial "projects.html" . }} {{ partial "history.html" . }} {{ partial "contact.html" . }}
     </div>
 
-    <script type="text/javascript ">
-        $(document).ready(function() {
+    <script type="text/javascript">
+        $(document).ready(function () {
             $('#fullpage').fullpage({
-                anchors: ['Home', 'What', 'Projects', 'History'],
-                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'yellow']
+                navigation: true,
+                showActiveTooltip: true,
+                navigationTooltips: ['Home', 'About', 'Projects', 'History', 'Contact']
             });
         });
     </script>
