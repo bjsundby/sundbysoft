@@ -47,8 +47,10 @@ body {
     left: 50%;
 }
 
-.section {
+div.section {
     text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
 div.section::after {
@@ -68,37 +70,40 @@ div.section.active::after {
 }
 
 div#home-box.section .home-info {
-    position: relative;
-    width: 100%;
     height: 100%;
-    left: 0;
-    text-align: center;
+    width: 100%;
     color: white;
     background: url(/img/space-03.jpg) center no-repeat;
-}
-
-div#home-box.section .home-text {
-    position: absolute;
-    top: calc(50% - 200px);
 }
 
 div#home-box.section .home-info .title {
     font-size: 95px;
     font-weight: bold;
     text-align: left;
-    margin-bottom: 21px;
-    width: 743px;
-    line-height: 115px;
+    padding-top: 100px;
     margin-left: 119px;
-    vertical-align: middle;
-    padding-bottom: 63px;
 }
 
 div#home-box.section .home-info .mission-statement {
-    width: 595px;
     font-size: 34px;
     text-align: left;
-    line-height: 1.44;
-    color: #ffffff;
     margin-left: 119px;
+}
+
+div#projects-box.section .project-info {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    text-align: center;
+    color: white;
+}
+
+div#history-box.section .history-info {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    text-align: center;
+    color: white;
 }

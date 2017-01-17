@@ -1,0 +1,5 @@
+historyId: 9
+title: Seequa Chameleon
+year: 1900
+img: Seequa_Chameleon_System_1.jpg
+description: I have been flying hang gliders for some years when I got a request for making a computer program to keep track of all results in the 1984 open european hang gliding championship. I made the program on this computer in JRT pascal. The computer was quite special in that it had both a Z80 and a 8088 microprocessor. It could run both MS-DOS and CP/M. It also had the nice feature that it rebooted if you was a little bit static and produced a small spark. The Pascal also had a nice feature; it rebooted the computer when a division by zero occured. I found out that the second day into the championship when the computer rebooted in the middle of the result computation.

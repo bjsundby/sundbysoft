@@ -1,0 +1,5 @@
+historyId: 11
+title: Commodore PC
+year: 1985
+img: CommodorePc.jpg
+description: In my third year of my education I was able to buy this computer which was a real PC. It had two 360K floppies but only 256K with memory. It turned out that a memory kit up to 512K had a cost of 1/4 of the computer price (which also was expensive) and it included a memory adressing PAL. We figured out how to program the PAL ourselves and could then buy memory chips for about 1/20 of the price from Commodore. We then got 640K memory which was huge at that time. I later bought an extension card with 1MB and with some trick extended the useable memory to 720K without special software. This computer had only text display, but I bougth later a graphical black and white CGA graphical card and a mouse. Finally I bought a new color monitor and an EGA graphic card. With this hardware then mandelbrot and julia pictures was generated at a rate of 1 per day. When I could afford an 8087 mathematical coprocessor chip. I rewrote the mandelbrot generation loop in 8087 assembler and the generation time went down to about 5 minutes.
