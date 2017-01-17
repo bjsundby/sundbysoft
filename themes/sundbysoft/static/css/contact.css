@@ -1,0 +1,19 @@
+
+div#contact-box.section .contact-info {
+    height: 100%;
+    width: 100%;
+}
+
+div#contact-box.section .contact-info .title {
+    font-size: 95px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 100px;
+    margin-left: 119px;
+}
+
+div#contact-box.section .contact-info .email {
+    font-size: 34px;
+    text-align: left;
+    margin-left: 119px;
+}

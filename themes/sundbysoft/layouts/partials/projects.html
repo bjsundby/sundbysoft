@@ -1,32 +1,28 @@
 <div id="projects-box" class="section" data-anchor="Projects">
 
-    <div class="content" id="projects">
-        <div class="slide" data-anchor="projects-0">
-            <div class="project-info">
-                <div class="project-title">
-                    Projects
-                </div>
+    <div class="slide" data-anchor="project-0">
+        <div class="project-info">
+            <div class="title">
+                Projects
             </div>
         </div>
-
-        {{ range sort .Site.Data.projects "projectId" }}
-        <div class="slide" data-anchor="projects{{.projectId}}">
-            <div class="project-info">
-                <div class="project-title">
-                    {{.title}}
-                </div>
-                <div class="project-year">
-
-                </div>
-            </div>
-            <div class="project-image">
-                <img src="/img/projects/{{.img}}" />
-            </div>
-
-        </div>
-        {{ end }}
-
     </div>
+
+    {{ range sort .Site.Data.projects "projectId" }}
+    <div class="slide" data-anchor="project-{{.projectId}}">
+        <div class="project-info">
+            <div class="project-title">
+                {{.title}}
+            </div>
+            <div class="project-year">
+                {{.year}}
+            </div>
+        </div>
+        <div class="project-image">
+            <img src="/img/projects/{{.img}}" />
+        </div>
+    </div>
+    {{ end }}
 
     <div class="nav-mouse">
         <img src="/img/mouse.png" />

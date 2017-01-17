@@ -1,31 +1,28 @@
 <div id="history-box" class="section" data-anchor="History">
 
-    <div class="content" id="history">
-        <div class="slide" data-anchor="history-0">
-            <div class="history-info">
-                <div class="history-title">
-                    History
-                </div>
+    <div class="slide" data-anchor="history-0">
+        <div class="history-info">
+            <div class="title">
+                Computer history
             </div>
         </div>
-
-        {{ range sort .Site.Data.history "historyId" }}
-        <div class="slide" data-anchor="history-{{.historyId}}">
-            <div class="history-info">
-                <div class="history-title">
-                    {{.title}}
-                </div>
-                <div class="history-year">
-                    {{.year}}
-                </div>
-            </div>
-            <div class="history-image">
-                <img src="/img/history/{{.img}}" />
-            </div>
-        </div>
-        {{ end }}
-
     </div>
+
+    {{ range sort .Site.Data.history "historyId" }}
+    <div class="slide" data-anchor="history-{{.historyId}}">
+        <div class="history-info">
+            <div class="history-title">
+                {{.title}}
+            </div>
+            <div class="history-year">
+                {{.year}}
+            </div>
+        </div>
+        <div class="history-image">
+            <img src="/img/history/{{.img}}" />
+        </div>
+    </div>
+    {{ end }}
 
     <div class="nav-mouse">
         <img src="/img/mouse.png" />

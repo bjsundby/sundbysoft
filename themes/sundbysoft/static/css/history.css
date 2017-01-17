@@ -1,0 +1,43 @@
+div#history-box.section .history-info {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 0;
+    text-align: center;
+}
+
+div#history-box.section [data-anchor="history-0"] .history-info {
+    background: url(/img/computer-history.jpg) left top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div#history-box.section .history-info .title {
+    position: absolute;
+    font-size: 95px;
+    font-weight: bold;
+    text-align: left;
+    top: 30%;
+    left: 119px;
+}
+
+div#history-box.section.active .fp-controlArrow.fp-prev {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+
+div#history-box.section.active .fp-controlArrow.fp-next {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+

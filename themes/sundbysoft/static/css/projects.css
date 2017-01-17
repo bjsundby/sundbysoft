@@ -1,0 +1,43 @@
+div#projects-box.section .project-info {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 0;
+    text-align: center;
+}
+
+div#projects-box.section [data-anchor="project-0"] .project-info {
+    background: url(/img/projects.jpg) left top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div#projects-box.section .project-info .title {
+    position: absolute;
+    font-size: 95px;
+    font-weight: bold;
+    text-align: left;
+    top: 30%;
+    left: 119px;
+}
+
+div#projects-box.section.active .fp-controlArrow.fp-prev {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+
+div#projects-box.section.active .fp-controlArrow.fp-next {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+

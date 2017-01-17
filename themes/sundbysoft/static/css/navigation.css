@@ -1,0 +1,60 @@
+#fp-nav {
+  top: 149px;
+}
+
+#fp-nav.right {
+  right: 71px;
+}
+
+#fp-nav::before {
+  display: block;
+  position: absolute;
+  content: url(/img/menu-background.png);
+  left: -391px;
+  top: -80px;
+}
+
+#fp-nav ul li {
+  margin-bottom: 20px;
+}
+
+#fp-nav ul li a span {
+  background: dodgerblue;
+  width: 14px;
+  height: 14px;
+  margin: -14px 0 0 -7px;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  background: white;
+  color: dodgerblue;
+  width: 20px;
+  height: 20px;
+  margin: -18px 0 0 -10px;
+}
+
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span,
+#fp-nav ul li a.active span {
+  width: 20px;
+  height: 20px;
+  margin: -18px 0 0 -10px;
+  font-size: 26px;}
+
+#fp-nav ul li .fp-tooltip {
+  width: auto;
+  opacity: 100;
+  font-size: 16px;
+  top: -8px;
+  color: dodgerblue;
+  padding-right: 10px;
+}
+
+#fp-nav ul li a.active + .fp-tooltip {
+  font-size: 26px;
+  top: -16px;
+  color: white;
+}
