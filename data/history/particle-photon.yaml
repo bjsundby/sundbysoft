@@ -2,4 +2,4 @@ historyId: 30
 title: Particle Photon
 year: 2016
 img: photon2.jpg
-description: This is
+description: I have used the Photon to control a IOT LED lamp showing the realtime build system status for the software that is developed, and also a build flag showing the build progress.

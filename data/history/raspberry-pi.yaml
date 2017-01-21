@@ -2,4 +2,7 @@ historyId: 29
 title: Raspberry Pi
 year: 2015
 img: RaspberryPi2.png
-description: This is
+description: |
+    I used the Galileo to create a controller in a process control system. I used Windows 10 IOT
+    with C++ programming language and also Rasbian Linux with the C++ programming language.
+    I have also used it for various IOT devices running node.js and java/java script on Rasbian Linux.
