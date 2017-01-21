@@ -1,0 +1,9 @@
+historyId: 22
+title: The Earth
+year: 2009
+img: TheEarth.jpg
+description: |
+    This is my homemade computer used for controlling my kids Toylander car. 
+    It is based on a PIC 18F2455 microcontroller. 
+    It is programmed in C and assembler using Microchip development environment.
+    It designed the computer using PCB Express and got the board produced by them.

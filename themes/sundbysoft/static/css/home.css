@@ -15,12 +15,14 @@ div#home-box.section .home-info .title {
     text-align: left;
     top: 30%;
     left: 119px;
+    width: 800px;
 }
 
-div#home-box.section .home-info .mission-statement {
+div#home-box.section .home-info .description {
     position: absolute;
     font-size: 34px;
     text-align: left;
     top: 60%;
     left: 119px;
+    width: 800px;
 }

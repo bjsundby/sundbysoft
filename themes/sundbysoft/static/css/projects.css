@@ -21,6 +21,26 @@ div#projects-box.section .project-info .title {
     text-align: left;
     top: 30%;
     left: 119px;
+    width: 800px;
+}
+
+div#projects-box.section .project-info .description {
+    position: absolute;
+    font-size: 34px;
+    text-align: left;
+    top: 60%;
+    left: 119px;
+    width: 800px;
+}
+
+div#projects-box.section .project-info .title {
+    position: absolute;
+    font-size: 95px;
+    font-weight: bold;
+    text-align: left;
+    top: 30%;
+    left: 119px;
+    width: 800px;
 }
 
 div#projects-box.section.active .fp-controlArrow.fp-prev {

@@ -2,18 +2,27 @@
 div#contact-box.section .contact-info {
     height: 100%;
     width: 100%;
+    background: url(/img/contact.jpg) left top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 div#contact-box.section .contact-info .title {
+    position: absolute;
     font-size: 95px;
     font-weight: bold;
     text-align: left;
-    padding-top: 100px;
-    margin-left: 119px;
+    top: 30%;
+    left: 119px;
 }
 
 div#contact-box.section .contact-info .email {
+    position: absolute;
     font-size: 34px;
     text-align: left;
-    margin-left: 119px;
+    text-decoration: none;
+    top: 60%;
+    left: 119px;  
 }

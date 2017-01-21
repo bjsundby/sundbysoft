@@ -1,5 +1,10 @@
 historyId: 5
 title: HP 3000
-year: 1900
+year: 1983
 img: HP3000.jpg
-description: When starting my higher education in 1984 at Kongsberg University College, we used a HP 3000 computer with various terminals to program in pascal. We had one graphical terminal capable of displaying graphics and I made a three dimensional maze game where you could walk around a random maze to find the exit. The programming language we used where Pascal.
+description: |
+    When starting my higher education in 1983 at Kongsberg University College, 
+    we used a HP 3000 computer with various terminals to program in pascal. 
+    We had one graphical terminal capable of displaying graphics and I made a three dimensional 
+    maze game where you could walk around a random maze to find the exit. 
+    The programming language we used was Pascal.

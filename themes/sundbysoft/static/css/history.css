@@ -4,6 +4,11 @@ div#history-box.section .history-info {
     position: relative;
     left: 0;
     text-align: center;
+    background: url(/img/historyBackground.jpg) left top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 div#history-box.section [data-anchor="history-0"] .history-info {
@@ -21,6 +26,55 @@ div#history-box.section .history-info .title {
     text-align: left;
     top: 30%;
     left: 119px;
+    width: 800px;
+}
+
+div#history-box.section .history-info .description {
+    position: absolute;
+    font-size: 34px;
+    text-align: left;
+    top: 60%;
+    left: 119px;
+    width: 800px;
+}
+
+div#history-box.section .history-info .history-title {
+    position: absolute;
+    font-size: 90px;
+    font-weight: bold;
+    text-align: left;
+    top: 8%;
+    left: 119px;
+    width: 800px;
+}
+
+div#history-box.section .history-info .history-year {
+    position: absolute;
+    font-size: 34px;
+    text-align: left;
+    top: 30%;
+    left: 119px;
+    width: 800px;
+}
+
+div#history-box.section .history-info .history-description {
+    position: absolute;
+    font-size: 20px;
+    text-align: left;
+    top: 30%;
+    left: 400px;
+    width: calc(60% - 50px);
+}
+
+div#history-box.section .history-image img {
+    position: absolute;
+    top: 40%;
+    left: 119px;
+    width: 200px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: white;
 }
 
 div#history-box.section.active .fp-controlArrow.fp-prev {

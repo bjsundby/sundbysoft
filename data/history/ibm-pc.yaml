@@ -2,4 +2,8 @@ historyId: 12
 title: IBM PC
 year: 1986
 img: IBMPC.png
-description: I started at Strathclyde university in Glasgow in 1986. We used terminals connected to a unix based mainframe and IBM PC's for programming. I mainly used my commodore pc for all programming. But some exercise such as Cobol programmig had to be done on the mainframe.
+description: |
+    I started at Strathclyde university in Glasgow in 1986. 
+    We used terminals connected to a unix based mainframe and IBM PC's for programming. 
+    I mainly used my commodore pc for all programming. 
+    But some exercise such as Cobol programming had to be done on a mainframe computer.

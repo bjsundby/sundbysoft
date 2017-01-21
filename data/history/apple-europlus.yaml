@@ -1,5 +1,12 @@
 historyId: 2
 title: Apple Europlus II
-year: 1900
+year: 1980
 img: AppleEuroplusII.jpg
-description: This was the first real computer I used to program with. The one I used had only a cassette player for storing programs and a kind of tinn foil printer using heat to produce print. We had a star wars game using pads to control x fighters shooting each other. The first real program I made was a hang glider graphical game where you had to mainatin correct speed to stay up in the air as long as possible and also random bursts of rising air to get you up. You had to land in a correct way get a good score. It was programmed in basic and it was a real challenge to get i running fast enough.
+description: |
+    This was the first real computer I programmed. The one I used had only a cassette player
+    for storing programs and a kind of tinn foil printer using heat to produce print. 
+    We had a star wars game using pads to control x fighters shooting each other. 
+    The first real program I made was a hang glider graphical game where you had to maintain correct speed and angle of attack
+    to stay up in the air as long as possible and also random bursts of rising air to get you up. 
+    You had to land in a correct way get a good score. 
+    It was programmed in basic and it was a real challenge to get i running fast enough.
