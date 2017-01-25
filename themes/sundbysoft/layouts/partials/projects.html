@@ -1,24 +1,28 @@
-<div id="projects-box" class="section" data-anchor="Projects">
+<div id="projects-box" class="section" data-anchor="projects">
 
     <div class="slide" data-anchor="project-0">
         <div class="project-info">
             <div class="title">Projects</div>
-            <div class="description">The Projects I have worked on</div>
+            <div class="description">The Projects I have made</div>
         </div>
     </div>
 
-    {{ range sort .Site.Data.projects "projectId" }}
-    <div class="slide" data-anchor="project-{{.projectId}}">
+    {{ range where (sort .Data.Pages) "Section" "projects" }}
+    <div class="slide" data-anchor="project-{{ .Params.project }}">
         <div class="project-info">
             <div class="project-title">
-                {{.title}}
+                {{ .Title | safeHTML }}
             </div>
             <div class="project-year">
-                {{.year}}
+                Year {{ .Params.year | safeHTML }}
             </div>
-        </div>
-        <div class="project-image">
-            <img src="/img/projects/{{.img}}" />
+
+            <div class="project-description">
+                {{ .Params.description | safeHTML }}
+            </div>
+            <div class="project-image">
+                <img src="/img/projects/{{ .Params.img }}" />
+            </div>
         </div>
     </div>
     {{ end }}
@@ -27,5 +31,5 @@
         <img src="/img/mouse.png" />
         <div class nav-text>Scroll down</div>
     </div>
-    
+
 </div>

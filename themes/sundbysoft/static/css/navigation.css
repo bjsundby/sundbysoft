@@ -1,60 +1,70 @@
-#fp-nav {
-  top: 149px;
+
+#navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
 }
 
-#fp-nav.right {
-  right: 71px;
+.navigation-content {
+    position: absolute;
+    right: 55px;
+    top: 35px;
 }
 
-#fp-nav::before {
-  display: block;
-  position: absolute;
-  content: url(/img/menu-background.png);
-  left: -391px;
-  top: -80px;
+.navigation-content ul {
+    margin: 0;
+    padding: 0;
 }
 
-#fp-nav ul li {
-  margin-bottom: 20px;
+.navigation-content ul li {
+    list-style: none;
+    text-align: right;
+    margin: 10px 0;
+    height: 30px;
 }
 
-#fp-nav ul li a span {
-  background: dodgerblue;
-  width: 14px;
-  height: 14px;
-  margin: -14px 0 0 -7px;
+.navigation-content ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: top;
 }
 
-#fp-nav ul li a.active span,
-.fp-slidesNav ul li a.active span,
-#fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span {
-  background: white;
-  color: dodgerblue;
-  width: 20px;
-  height: 20px;
-  margin: -18px 0 0 -10px;
+.navigation-content ul li::after {
+    display: inline-block;
+    margin-left: 20px;
+    width: 14px;
+	  height: 14px;
+	  background-color: #ffffff;
+	  border-radius: 7px;
+    content: ' ';
+    text-align: center;
 }
 
-#fp-nav ul li:hover a span,
-.fp-slidesNav ul li:hover a span,
-#fp-nav ul li a.active span {
-  width: 20px;
-  height: 20px;
-  margin: -18px 0 0 -10px;
-  font-size: 26px;}
-
-#fp-nav ul li .fp-tooltip {
-  width: auto;
-  opacity: 100;
-  font-size: 16px;
-  top: -8px;
-  color: dodgerblue;
-  padding-right: 10px;
+.navigation-content ul li.selected {
+    line-height: 30px;
 }
 
-#fp-nav ul li a.active + .fp-tooltip {
-  font-size: 26px;
-  top: -16px;
-  color: white;
+.navigation-content ul li.selected::after {
+    width: 20px;
+	  height: 20px;
+    border-radius: 10px;
+    margin-right: -2px;
+}
+
+.navigation-content ul li.selected a {
+    font-size: 22px;        
+}
+
+.navigation-content ul li:hover a {
+    color: #48B8E7;
+}
+
+.navigation-content ul li.selected:hover a {
+    color: #ffffff;
+}
+
+.navigation-content ul li:hover::after {
+    background-color: #48B8E7;
 }

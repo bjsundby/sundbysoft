@@ -16,9 +16,12 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
 </head>
 
 <body>
+    {{ partial "navigation.html" . }}
+
     <div id="fullpage">
         {{ partial "home.html" . }}
         {{ partial "projects.html" . }} 
@@ -29,12 +32,13 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#fullpage').fullpage({
-                navigation: true,
-                showActiveTooltip: true,
-                navigationTooltips: ['Home', 'Projects', 'History', 'Contact']
+     
             });
         });
     </script>
+
+    {{ partial "ga.html" . }}
+    
 </body>
 
 </html>

@@ -1,0 +1,11 @@
+<nav>
+    <div id="navigation">
+        <div class="navigation-content">
+            <ul>
+                {{ range .Site.Params.navigation.links }}
+                <li data-key={{ .key }}><a href="/#{{ .key }}">{{ .name }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -6,3 +6,22 @@ relativeURLs = true
 
 [blackfriday]
 extensions = ["hardLineBreak"]
+
+# Navigation
+	[params.navigation]
+
+		[[params.navigation.links]]
+			key = "home"
+			name = "Home"
+
+		[[params.navigation.links]]
+			key = "projects"
+			name = "Projects"
+
+		[[params.navigation.links]]
+			key = "history"
+			name = "History"
+
+		[[params.navigation.links]]
+			key = "contact"
+			name = "Contact"

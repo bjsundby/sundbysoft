@@ -4,6 +4,11 @@ div#projects-box.section .project-info {
     position: relative;
     left: 0;
     text-align: center;
+    background: url(/img/projectsBackground.jpg) left top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 div#projects-box.section [data-anchor="project-0"] .project-info {
@@ -33,14 +38,44 @@ div#projects-box.section .project-info .description {
     width: 800px;
 }
 
-div#projects-box.section .project-info .title {
+
+div#projects-box.section .project-info .project-title {
     position: absolute;
-    font-size: 95px;
+    font-size: 90px;
     font-weight: bold;
+    text-align: left;
+    top: 8%;
+    left: 119px;
+    width: 850px;
+}
+
+div#projects-box.section .project-info .project-year {
+    position: absolute;
+    font-size: 34px;
     text-align: left;
     top: 30%;
     left: 119px;
     width: 800px;
+}
+
+div#projects-box.section .project-info .project-description {
+    position: absolute;
+    font-size: 20px;
+    text-align: left;
+    top: 30%;
+    left: 450px;
+    width: calc(60% - 50px);
+}
+
+div#projects-box.section .project-image img {
+    position: absolute;
+    top: 40%;
+    left: 119px;
+    width: 300px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: white;
 }
 
 div#projects-box.section.active .fp-controlArrow.fp-prev {
