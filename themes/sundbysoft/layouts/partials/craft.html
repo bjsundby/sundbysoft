@@ -1,0 +1,35 @@
+<div id="craft-box" class="section" data-anchor="craft">
+
+    <div class="slide" data-anchor="craft-0">
+        <div class="craft-info">
+            <div class="title">Craft activity</div>
+            <div class="description">Crafting projects I have made</div>
+        </div>
+    </div>
+
+    {{ range where (sort .Data.Pages) "Section" "craft" }}
+    <div class="slide" data-anchor="craft-{{ .Params.craft }}">
+        <div class="craft-info">
+            <div class="craft-title">
+                {{ .Title | safeHTML }}
+            </div>
+            <div class="craft-year">
+                Year {{ .Params.year | safeHTML }}
+            </div>
+
+            <div class="craft-description">
+                {{ .Params.description | safeHTML }}
+            </div>
+            <div class="craft-image">
+                <img src="/img/craft/{{ .Params.img }}" />
+            </div>
+        </div>
+    </div>
+    {{ end }}
+
+    <div class="nav-mouse">
+        <img src="/img/mouse.png" />
+        <div class nav-text>Scroll down</div>
+    </div>
+
+</div>

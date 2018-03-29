@@ -1,0 +1,97 @@
+div#craft-box.section .craft-info {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 0;
+    text-align: center;
+    background: url(/img/craftBackground.jpg) left top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div#craft-box.section [data-anchor="craft-0"] .craft-info {
+    background: url(/img/craft.jpg) left top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div#craft-box.section .craft-info .title {
+    position: absolute;
+    font-size: 95px;
+    font-weight: bold;
+    text-align: left;
+    top: 30%;
+    left: 119px;
+    width: 800px;
+}
+
+div#craft-box.section .craft-info .description {
+    position: absolute;
+    font-size: 34px;
+    text-align: left;
+    top: 60%;
+    left: 119px;
+    width: 800px;
+}
+
+div#craft-box.section .craft-info .craft-title {
+    position: absolute;
+    font-size: 90px;
+    font-weight: bold;
+    text-align: left;
+    top: 8%;
+    left: 119px;
+    width: 850px;
+}
+
+div#craft-box.section .craft-info .craft-year {
+    position: absolute;
+    font-size: 34px;
+    text-align: left;
+    top: 30%;
+    left: 119px;
+    width: 800px;
+}
+
+div#craft-box.section .craft-info .craft-description {
+    position: absolute;
+    font-size: 20px;
+    text-align: left;
+    top: 30%;
+    left: 450px;
+    width: calc(60% - 50px);
+}
+
+div#craft-box.section .craft-image img {
+    position: absolute;
+    top: 40%;
+    left: 119px;
+    width: 300px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: white;
+}
+
+div#craft-box.section.active .fp-controlArrow.fp-prev {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+
+div#craft-box.section.active .fp-controlArrow.fp-next {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+
